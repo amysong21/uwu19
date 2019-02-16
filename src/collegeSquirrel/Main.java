@@ -11,7 +11,7 @@ public class Main {
 		System.out.println("let's start the game");
 		System.out.println("round 1");
 		System.out.println("Would you like to feed " + CSName + ": French fries, Sprite, acorns, or water");
-		
+		System.out.println("hello");
 		
 	}
 	
