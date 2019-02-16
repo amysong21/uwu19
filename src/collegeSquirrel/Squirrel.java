@@ -6,5 +6,6 @@ public interface Squirrel {
 	int getHealthLevel();
 	int getHungerLevel();
 	int getThirstLevel();
+	void newStatus(int health, int hunger, int thirst);
 	
 }

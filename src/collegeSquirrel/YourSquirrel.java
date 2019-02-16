@@ -3,26 +3,32 @@ package collegeSquirrel;
 public class YourSquirrel implements Squirrel {
 
 
-	protected String name;
+	protected String CSname;
 	protected int healthLevel;
 	protected int hungerLevel;
 	protected boolean alive;
 	protected int thirstLevel;
 	
 	public YourSquirrel (String name) {
-		this.name = name;		
-		healthLevel = 0;
-		hungerLevel = 0;
-		thirstLevel = 0;
+		this.CSname = name;		
+		healthLevel = 8;
+		hungerLevel = 2;
+		thirstLevel = 2;
 		alive = true;
-		if (this.name == null) {
+		if (this.CSname == null) {
 			throw new RuntimeException("NAME YOUR SQUIRREL");
 		}
 	}
 	
+	public void newStatus (int health, int hunger, int thirst) {
+		this.healthLevel = health; 
+		this.hungerLevel = hunger;
+		this.thirstLevel = thirst;
+	}
+	
 	@Override
 	public String getName() {
-		return name;
+		return CSname;
 	}
 
 	@Override
