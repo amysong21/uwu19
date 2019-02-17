@@ -8,9 +8,12 @@ The four options are below:
 
 1. Feed the squirrel French fries 
    This will decrease the hunger level by 20% and the health level by 10%. It will increase the thirst level by 10%.
+   
 2. Feed the squirrel sprite
    This will decrease the health level by 10% and the thirst level by 10%. 
+   
 3. Feed the squirrel acorns
    This will increase the health level by 10% and the thirst level by 10%. This will decrease the hunger level by 10%.
+   
 4. Feed the squirrel water
    This will decrease the thirst level by 20% and increase the health level by 10%.
