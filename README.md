@@ -13,3 +13,5 @@ The four options are below:
 3. Feed the squirrel acorns - This will increase the health level by 10% and the thirst level by 10%. This will decrease the hunger level by 10%.
    
 4. Feed the squirrel water - This will decrease the thirst level by 20% and increase the health level by 10%.
+
+You are given the chance to exercise after each time you feed the squirrel if any of your levels (thirst, hunger, and health) is zero. Exercising will increase the thirst, hunger, and health level by 20%. The squirrel will be automatically forced to exercise when if any of the levels (thirst, hunger, and health) is below 0%.
