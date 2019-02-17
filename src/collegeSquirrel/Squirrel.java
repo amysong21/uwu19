@@ -2,7 +2,7 @@ package collegeSquirrel;
 
 public interface Squirrel {
 	String getName();
-	boolean isAAlive();
+	boolean isAlive();
 	int getHealthLevel();
 	int getHungerLevel();
 	int getThirstLevel();

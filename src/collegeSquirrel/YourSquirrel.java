@@ -32,7 +32,7 @@ public class YourSquirrel implements Squirrel {
 	}
 
 	@Override
-	public boolean isAAlive() {
+	public boolean isAlive() {
 		if (healthLevel < 0 || hungerLevel > 10 || thirstLevel > 10) {
 			return false;
 		}
