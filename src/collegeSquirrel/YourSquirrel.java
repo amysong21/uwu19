@@ -41,17 +41,28 @@ public class YourSquirrel implements Squirrel {
 
 	@Override
 	public int getHealthLevel() {
+		if (healthLevel >= 10) {
+			healthLevel = 10;
+		}
 		return healthLevel;
 	}
 
 	@Override
 	public int getHungerLevel() {
+		if (hungerLevel >= 10) {
+			hungerLevel = 10;
+		}
 		return hungerLevel;
 	}
 
 	@Override
 	public int getThirstLevel() {
+		if (thirstLevel >= 10) {
+			thirstLevel = 10;
+		}
 		return thirstLevel;
 	}
+
+	
 
 }

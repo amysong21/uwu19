@@ -34,6 +34,8 @@ public class UpdateStatus implements Update {
 		} else if (food == 1) {
 			hunger-= 2;
 			health--;
+			thirst++;
+			
 			player.newStatus(health, hunger, thirst);
 		} else if (food == 2) {
 			health--;
@@ -42,6 +44,7 @@ public class UpdateStatus implements Update {
 		} else if (food == 3) {
 			health++;
 			hunger--;
+			thirst++;
 			player.newStatus(health, hunger, thirst);
 		} else if (food == 4) {
 			thirst -= 2;
@@ -70,6 +73,7 @@ public class UpdateStatus implements Update {
 		} else {
 			System.out.println(player.getName() + " is in good shape; would you still like to make your squirrel exercise?");
 			System.out.println("if yes, please enter 0");
+			System.out.println("if no, please enter 1");
 			if (scan.nextInt() == 0) {
 				hunger += 2;
 				health += 2;
@@ -78,6 +82,9 @@ public class UpdateStatus implements Update {
 					health = 10;
 				}
 				player.newStatus(health, hunger, thirst);
+			} else {
+				player.newStatus(health, hunger, thirst);
+
 			}
 		}
 		
@@ -85,12 +92,15 @@ public class UpdateStatus implements Update {
 	
 	@Override
 	public void aliveHello() {
-		if (player.isAlive()) {
-			System.out.println("your squirrel is alive");
-		} else {
+		if (!player.isAlive()) {
 			System.out.println("your squirrel is dead");
 			System.out.println("ending the game ...");
-//			break;
+			for (int i = 0; i < 1; i++) {
+				break;
+			}
+		} else {
+			System.out.println("your squirrel is alive");
+
 		}
 	
 
